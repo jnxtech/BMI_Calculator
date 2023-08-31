@@ -1,0 +1,83 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: neonGlow 2s linear infinite alternate;
+    background-image: linear-gradient(rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.6)), url('wp.png'); 
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px; 
+    font-size: 14px; 
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    color: #f0f0f0;
+}
+
+button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00cc00;
+}
+
+#category {
+    display: none;
+    margin-top: 15px;
+}
+
+#resetBtn {
+    display: none;
+    margin-top: 15px; 
+}
+
+
+.bmi-range {
+    margin-top: 15px;
+    font-size: 13px; 
+}
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00; 
+    }
+    to {
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; 
+    }
+}
